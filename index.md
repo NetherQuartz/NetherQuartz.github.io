@@ -37,6 +37,13 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+```python
+#Python code
+k = 3
+z = (' ',',','.','!','?','-',':')
+print(*map(lambda x: chr(ord(x)+k) if (ord(x)+k<=122 and (x not in z)) else (x if (x in z) else chr(ord(x)+k-122+96)), input()), sep='')
+```
+
 #### Header 4
 
 *   This is an unordered list following a header.
