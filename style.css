@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(41, 41, 41, 0.438);
+}
+
+.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 33rem;
+}
+
+.card {
+    padding: 0;
+    width: 100%;
+    /* height: 800px; */
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.wrapper {
+    padding: 3rem;
+}
+
+.card-top {
+    background-color: rgb(36, 36, 36);
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+}
+
+img.avatar {
+    width: 10rem;
+    border-radius: 100%;
+}
+
+h1.name {
+    line-height: 1.125;
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 700;
+    letter-spacing: -0.17rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+p.description {
+    margin-bottom: 0 !important;
+    margin-top: 1.25rem;
+    font-size: 1em;
+    line-height: 1.875;
+    font-weight: 300;
+    color: #fff;
+}
+
+.card button {
+    background: #fff;
+    text-align: left;
+    border-color: #212529;
+    color: #212529;
+    border-radius: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 100%;
+    height: 3rem;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.card button {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.card button i {
+    display: inline-block;
+    width: 16%;
+    position: relative;
+    right: -5%;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.card button span {
+    display: inline-block;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+
+.card button:hover {
+    background: #fff;
+    border-color: rgb(36, 36, 36);
+    color: rgb(36, 36, 36);
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:active {
+    background-color: rgb(36, 36, 36) !important;
+    border-color: rgb(36, 36, 36) !important;
+}
+
+.col-sm {
+    padding: 0 0.5rem 0 0.5rem;
+}
