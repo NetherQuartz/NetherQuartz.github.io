@@ -8,31 +8,38 @@ body {
     min-width: 100%;
     left: 0;
     top: 0;
-    background-image: url("background.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 }
 
-.overlay{
+#animation-background {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.overlay {
     position: absolute;
     min-height: 100%;
     min-width: 100%;
     left: 0;
     top: 0;
     background: rgba(41, 41, 41, 0.438);
+    z-index: 1;
 }
 
 .container {
     padding-top: 1rem;
     padding-bottom: 1rem;
     max-width: 33rem;
+    z-index: 2;
+    position: relative;
 }
 
 .card {
     padding: 0;
     width: 100%;
-    /* height: 800px; */
     border-radius: 1rem;
     background-color: #fff;
 }
@@ -125,4 +132,8 @@ button:active {
 
 .col-sm {
     padding: 0 0.5rem 0 0.5rem;
+}
+
+.card-bottom .row {
+    margin-bottom: 1rem;
 }
