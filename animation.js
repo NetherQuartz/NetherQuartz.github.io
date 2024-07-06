@@ -2,19 +2,23 @@ let stars = [];
 const speed = 2; // Fixed speed value
 
 function setup() {
-    let canvas = createCanvas(windowWidth, windowHeight);
-    canvas.parent('animation-background');
-    for (let i = 0; i < 800; i++) {
-        stars[i] = new Star();
+    if (windowHeight / windowWidth < 16 / 9) {
+        let canvas = createCanvas(windowWidth, windowHeight);
+        canvas.parent('animation-background');
+        for (let i = 0; i < 800; i++) {
+            stars[i] = new Star();
+        }
     }
 }
 
 function draw() {
-    background(0);
-    translate(width / 2, height / 2);
-    for (let i = 0; i < stars.length; i++) {
-        stars[i].update();
-        stars[i].show();
+    if (windowHeight / windowWidth < 16 / 9) {
+        background(0);
+        translate(width / 2, height / 2);
+        for (let i = 0; i < stars.length; i++) {
+            stars[i].update();
+            stars[i].show();
+        }
     }
 }
 
@@ -57,5 +61,7 @@ class Star {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
+    if (windowHeight / windowWidth < 16 / 9) {
+        resizeCanvas(windowWidth, windowHeight);
+    }
 }

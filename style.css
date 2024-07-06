@@ -1,5 +1,7 @@
 body {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -92,6 +94,7 @@ p.description {
     height: 3rem;
     font-weight: 600;
     vertical-align: middle;
+    max-width: 250px; /* Set max-width for buttons */
 }
 
 .card button {
@@ -136,4 +139,58 @@ button:active {
 
 .card-bottom .row {
     margin-bottom: 1rem;
+}
+
+@media (max-aspect-ratio: 9/16) {
+    .header {
+        position: static;
+        min-height: auto;
+        min-width: auto;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .card {
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .wrapper {
+        padding: 1.5rem;
+    }
+
+    .card-top {
+        border-radius: 0;
+    }
+
+    img.avatar {
+        width: 8rem;
+    }
+
+    h1.name {
+        font-size: 2em;
+    }
+
+    p.description {
+        font-size: 0.875em;
+    }
+
+    .card button {
+        height: 2.5rem;
+        font-size: 0.875em;
+        padding-left: 1rem; /* Adjusted padding */
+        padding-right: 1rem; /* Adjusted padding */
+    }
+
+    .card button i {
+        font-size: 1em;
+        width: 20%; /* Adjusted width */
+    }
+
+    .card button span {
+        width: 75%; /* Adjusted width */
+    }
 }
